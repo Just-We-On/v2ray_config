@@ -1,6 +1,11 @@
 {
     "inbounds": [
         {
+            "port": 3004,
+            "protocol": "socks",
+            "tag": "i_4"
+        },
+        {
             "port": 3005,
             "protocol": "socks",
             "tag": "i_5"
@@ -17,6 +22,11 @@
         }
     ],
     "outbounds": [
+        {
+            "sendThrough": "10.0.0.4",
+            "protocol": "freedom",
+            "tag": "o_4"
+        },
         {
             "sendThrough": "10.0.0.5",
             "protocol": "freedom",
@@ -35,6 +45,11 @@
     ],
     "routing": {
         "rules": [
+            {
+                "type": "field",
+                "inboundTag": "i_4",
+                "outboundTag": "o_4"
+            },
             {
                 "type": "field",
                 "inboundTag": "i_5",
