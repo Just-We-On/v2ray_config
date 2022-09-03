@@ -1,9 +1,19 @@
 {
     "inbounds": [
         {
-            "port": "3005-3007",
+            "port": 3005,
             "protocol": "socks",
-            "tag": "i_0"
+            "tag": "i_5"
+        },
+        {
+            "port": 3006,
+            "protocol": "socks",
+            "tag": "i_6"
+        },
+        {
+            "port": 3007,
+            "protocol": "socks",
+            "tag": "i_7"
         }
     ],
     "outbounds": [
@@ -27,20 +37,17 @@
         "rules": [
             {
                 "type": "field",
-                "inboundTag": "i_0",
-                "port": 3005,
+                "inboundTag": "i_5",
                 "outboundTag": "o_5"
             },
             {
                 "type": "field",
-                "inboundTag": "i_0",
-                "port": 3006,
+                "inboundTag": "i_6",
                 "outboundTag": "o_6"
             },
             {
                 "type": "field",
-                "inboundTag": "i_0",
-                "port": 3007,
+                "inboundTag": "i_7",
                 "outboundTag": "o_7"
             }
         ]
