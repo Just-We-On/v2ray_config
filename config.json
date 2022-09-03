@@ -1,0 +1,48 @@
+{
+    "inbounds": [
+        {
+            "port": "3005-3007",
+            "protocol": "socks",
+            "tag": "i_0"
+        }
+    ],
+    "outbounds": [
+        {
+            "sendThrough": "10.0.0.5",
+            "protocol": "freedom",
+            "tag": "o_5"
+        },
+        {
+            "sendThrough": "10.0.0.6",
+            "protocol": "freedom",
+            "tag": "o_6"
+        },
+        {
+            "sendThrough": "10.0.0.7",
+            "protocol": "freedom",
+            "tag": "o_7"
+        }
+    ],
+    "routing": {
+        "rules": [
+            {
+                "type": "field",
+                "inboundTag": "i_0",
+                "port": 3005,
+                "outboundTag": "o_5"
+            },
+            {
+                "type": "field",
+                "inboundTag": "i_0",
+                "port": 3006,
+                "outboundTag": "o_6"
+            },
+            {
+                "type": "field",
+                "inboundTag": "i_0",
+                "port": 3007,
+                "outboundTag": "o_7"
+            }
+        ]
+    }
+}
