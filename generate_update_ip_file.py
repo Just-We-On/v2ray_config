@@ -107,7 +107,7 @@ key_zone = sys.argv[4]
 key_record = sys.argv[5]
 
 
-with open("update_ip_test.sh", "w") as f:
+with open("update_ip.sh", "w") as f:
     f.write(
         str_file.replace("key_mail", key_mail)
         .replace("key_auth_key", key_auth_key)
