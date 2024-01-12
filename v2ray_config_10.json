@@ -1,0 +1,160 @@
+{
+    "inbounds": [
+        {
+            "port": 3004,
+            "protocol": "socks",
+            "tag": "i_4"
+        },
+        {
+            "port": 3005,
+            "protocol": "socks",
+            "tag": "i_5"
+        },
+        {
+            "port": 3006,
+            "protocol": "socks",
+            "tag": "i_6"
+        },
+        {
+            "port": 3007,
+            "protocol": "socks",
+            "tag": "i_7"
+        },
+        {
+            "port": 3008,
+            "protocol": "socks",
+            "tag": "i_8"
+        },
+        {
+            "port": 3009,
+            "protocol": "socks",
+            "tag": "i_9"
+        },
+        {
+            "port": 3010,
+            "protocol": "socks",
+            "tag": "i_10"
+        },
+        {
+            "port": 3011,
+            "protocol": "socks",
+            "tag": "i_11"
+        },
+        {
+            "port": 3012,
+            "protocol": "socks",
+            "tag": "i_12"
+        },
+        {
+            "port": 3013,
+            "protocol": "socks",
+            "tag": "i_13"
+        }
+    ],
+    "outbounds": [
+        {
+            "sendThrough": "10.0.0.4",
+            "protocol": "freedom",
+            "tag": "o_4"
+        },
+        {
+            "sendThrough": "10.0.0.5",
+            "protocol": "freedom",
+            "tag": "o_5"
+        },
+        {
+            "sendThrough": "10.0.0.6",
+            "protocol": "freedom",
+            "tag": "o_6"
+        },
+        {
+            "sendThrough": "10.0.0.7",
+            "protocol": "freedom",
+            "tag": "o_7"
+        },
+        {
+            "sendThrough": "10.0.0.8",
+            "protocol": "freedom",
+            "tag": "o_8"
+        },
+        {
+            "sendThrough": "10.0.0.9",
+            "protocol": "freedom",
+            "tag": "o_9"
+        },
+        {
+            "sendThrough": "10.0.0.10",
+            "protocol": "freedom",
+            "tag": "o_10"
+        },
+        {
+            "sendThrough": "10.0.0.11",
+            "protocol": "freedom",
+            "tag": "o_11"
+        },
+        {
+            "sendThrough": "10.0.0.12",
+            "protocol": "freedom",
+            "tag": "o_12"
+        },
+        {
+            "sendThrough": "10.0.0.13",
+            "protocol": "freedom",
+            "tag": "o_13"
+        }
+    ],
+    "routing": {
+        "rules": [
+            {
+                "type": "field",
+                "inboundTag": "i_4",
+                "outboundTag": "o_4"
+            },
+            {
+                "type": "field",
+                "inboundTag": "i_5",
+                "outboundTag": "o_5"
+            },
+            {
+                "type": "field",
+                "inboundTag": "i_6",
+                "outboundTag": "o_6"
+            },
+            {
+                "type": "field",
+                "inboundTag": "i_7",
+                "outboundTag": "o_7"
+            },
+            {
+                "type": "field",
+                "inboundTag": "i_8",
+                "outboundTag": "o_8"
+            },
+            {
+                "type": "field",
+                "inboundTag": "i_9",
+                "outboundTag": "o_9"
+            },
+            {
+                "type": "field",
+                "inboundTag": "i_10",
+                "outboundTag": "o_10"
+            },
+            {
+                "type": "field",
+                "inboundTag": "i_11",
+                "outboundTag": "o_11"
+            },
+            {
+                "type": "field",
+                "inboundTag": "i_12",
+                "outboundTag": "o_12"
+            },
+            {
+                "type": "field",
+                "inboundTag": "i_13",
+                "outboundTag": "o_13"
+            }
+        ]
+    }
+}
