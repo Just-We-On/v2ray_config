@@ -89,6 +89,16 @@
             "port": 4012,
             "protocol": "http",
             "tag": "i_http_12"
+        },
+        {
+            "port": 3013,
+            "protocol": "socks",
+            "tag": "i_socks_13"
+        },
+        {
+            "port": 4013,
+            "protocol": "http",
+            "tag": "i_http_13"
         }
     ],
     "outbounds": [
@@ -136,6 +146,11 @@
             "sendThrough": "10.0.0.12",
             "protocol": "freedom",
             "tag": "o_12"
+        },
+        {
+            "sendThrough": "10.0.0.13",
+            "protocol": "freedom",
+            "tag": "o_13"
         }
     ],
     "routing": {
@@ -229,6 +244,16 @@
                 "type": "field",
                 "inboundTag": "i_http_12",
                 "outboundTag": "o_12"
+            },
+            {
+                "type": "field",
+                "inboundTag": "i_socks_13",
+                "outboundTag": "o_13"
+            },
+            {
+                "type": "field",
+                "inboundTag": "i_http_13",
+                "outboundTag": "o_13"
             }
         ]
     }
